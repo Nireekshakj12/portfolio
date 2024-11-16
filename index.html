@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nireeksha K J Shetty| Personal Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0099cc;
+        }
+
+        /* Main Section */
+        main {
+            padding: 50px 20px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-image 0.5s ease-in-out, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Section Titles */
+        section h1 {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 0px;
+            padding:50px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        section p, ul, table {
+            font-size: 20px;
+            color: black;
+            line-height: 1.6;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        section h2 {
+            font-size: 26px;
+            color: black;
+            margin-top: 0px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Backgrounds */
+        #home {
+            background-image: url('5.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            border: 5px solid #0099cc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #resume {
+            background-image: url('5.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            border: 5px solid #0099cc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #biodata {
+            background-image: url('5.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            border: 5px solid #0099cc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #contact {
+            background-image: url('5.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            border: 5px solid #0099cc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Home Profile Picture */
+        .home-profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid #0099cc;
+            margin-bottom: 0px;
+            transition: transform 0.3s ease;
+        }
+
+        .home-profile-picture:hover {
+            transform: scale(1.1);
+        }
+
+        .resume-content, .biodata-content {
+            max-width: 900px;
+            margin: 0px;
+            color: black;
+            text-align: left;
+        }
+
+        .resume-content ul{
+ margin-top: 0px;
+}
+.biodata-content table {
+            margin-top: 30px;
+        }
+
+        /* Contact Section Styling */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #contact li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: black;
+            text-decoration: none;
+            font-weight: 0;
+            transition: color 0.3s;
+        }
+
+        #contact a:hover {
+            color: black;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 40px;
+            }
+
+            section h1 {
+                font-size: 30px;
+            }
+
+            .home-profile-picture {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#biodata">Bio Data</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to my Personal Website</h1>
+ <img src="profile1.jpg" alt="Profile Picture" class="home-profile-picture">
+        </section>
+        <section id="resume">
+            <h1>Resume</h1>
+           
+            <div class="resume-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C, C++</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Web Development</li>
+                </ul>
+                <h2>Education</h2>
+               <ul>
+           <li>Bachelor of Engineering in Computer Science - Vivekananda College of Engineering and Technology (Pursuing)</li>
+            <li>PUC(PCMB) - Vivekananda Pre University College (2022)</li>
+               <li>SSLC - Vivekananda English Medium School (2020)</li>
+              </ul>
+                <h2>Certification</h2>
+                <ul>
+                    <li>Database and SQL</li>
+                    <li>Time Management</li>
+                </ul>
+            
+     </div>
+        </section>
+        <section id="biodata">
+            <h1>Bio Data</h1>
+            <div class="biodata-content">
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>Nireeksha K J Shetty</td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth:</th>
+                        <td>12/03/2004</td>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <td>Swami Nilaya, Bollana House, Aryapu Post and Village, Puttur, D.K-574201</td>
+                    </tr>
+                    <tr>
+                        <th>Phone:</th>
+                        <td>+919480115658</td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><a href="mailto:nireekshakjshetty@gmail.com">nireekshakjshetty@gmail.com</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Feel free to reach out to me:</p>
+            <ul>
+                <li>Phone: +919480115658</li>
+                <li><a href="mailto:nireekshakjshetty@gmail.com">nireekshakjshetty@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nireeksha K J Shetty. All rights reserved.</p>
+    </footer>
+</body>
+</html>
